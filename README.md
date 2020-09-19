@@ -44,14 +44,18 @@ area - the burned area of the forest (in hectares): 0.00 to 1090.84 (this output
 More Technical Data about the features could be found out at [Fire Weather Index System](https://www.nwcg.gov/publications/pms437/cffdrs/fire-weather-index-system) & [FWI Canada](https://cwfis.cfs.nrcan.gc.ca/background/summary/fwi).
 
 ## Submission Criteria
-anybody part of the DCS-Iem Group is eligible to contribute to this Open Source Project.
+anybody part of the DSC-IEM Community is eligible to contribute to this Open Source Project.
 
 ## Submission Procedure
 
 1. Fork this repository.
-2. O pen this Google Colaboratory [link](https://www.nwcg.gov/publications/pms437/cffdrs/fire-weather-index-system), & copy it to your google drive(**recommended**) or alternatively, use the provided Sample_Submission.ipynb Jupyter Notebook inside the templates folder if you want to modify the submission locally on your machine. Create yur own model and fill in the missing blanks in the functions provided there.
-3. Add your files inside the submissions folder. Make sure to include the both the .py and the .ipynb files in the following format :
-  
+2. Open this [Google Colaboratory Notebook](https://www.nwcg.gov/publications/pms437/cffdrs/fire-weather-index-system), & copy it to your google drive(**recommended**) or alternatively, use the provided Sample_Submission.ipynb Jupyter Notebook inside the templates folder if you want to modify the submission locally on your machine. Create yur own model and fill in the missing blanks in the functions provided there.
+3. Add your files inside the submissions folder on your github repository. Make sure to include the both the .py and the .ipynb files in the following format : Accuracy(rounded off to two digits)_YourClassifierName_YourProjectName_YourTeamName/YourName, {For example : 68.23_DecisionTreeClassifier_DTFire_DeadlyDuo}.
+4. Send us a Pull Request and we will perform some preliminary checks, before finally Merging your Contents.
+
+## Code of Conduct
+Copying Code from other repos will lead to immediate disqualification.
+
 
 ## Credits
 The credits for this repository is hidden and will be provided post event completion/evaluation.
