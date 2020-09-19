@@ -44,7 +44,7 @@ area - the burned area of the forest (in hectares): 0.00 to 1090.84 (this output
 More Technical Data about the features could be found out at [Fire Weather Index System](https://www.nwcg.gov/publications/pms437/cffdrs/fire-weather-index-system) & [FWI Canada](https://cwfis.cfs.nrcan.gc.ca/background/summary/fwi).
 
 ## Submission Criteria
-anybody part of the DSC-IEM Community is eligible to contribute to this Open Source Project.
+Anybody part of the Developer Students Club Community is eligible to contribute to this Open Source Project.
 
 ## Submission Procedure
 
