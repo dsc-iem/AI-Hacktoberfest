@@ -44,10 +44,5 @@ For this dataset you are provided with the following features/attributes of a pa
 
 More Technical Data about the features could be found out at [Fire Weather Index System](https://www.nwcg.gov/publications/pms437/cffdrs/fire-weather-index-system) & [FWI Canada](https://cwfis.cfs.nrcan.gc.ca/background/summary/fwi).
 
-
-## Code of Conduct
-Copying Code from other repos will lead to immediate disqualification.
-
-
 ## Credits
 The credits for this repository is hidden and will be provided post event completion/evaluation.
