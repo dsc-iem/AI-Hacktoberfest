@@ -6,7 +6,6 @@
 # <img src='https://upload.wikimedia.org/wikipedia/commons/d/d8/Deerfire_high_res_edit.jpg' width='1200px' style="vertical-align:middle"/>
 
 # **Hello** reader, In this notebook, I have covered the model-building part for Forest Fire Prediction and the Uni-variate analysis of the target variable(area). I have plotted different charts and graphs in order to describe how the target variable is changing and what are the properties of that variable.
-# 
 # <br>
 # 
 # ### Table of Content:
@@ -36,8 +35,8 @@
 #       * Model Building using Selected features
 #       * Cross Validation
 #       * Metric Reports
-#       
 # 
+# ### Note: The plots are in cufflinks and plotly, so it won't be visible inside github. To see the plots all you need to do is to clone the repository and open it in your local system or you can open the file inside [kaggle](https://www.kaggle.com/) too.
 
 # # Utils:
 
