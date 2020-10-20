@@ -1,0 +1,52 @@
+
+Run these commands on a new bash console:
+git clone https://github.com/khanfarhan10/ForestFirePredictionsFlaskPython.git
+mkvirtualenv myvirtualenv --python=/usr/bin/python3.8
+cd ForestFirePredictionsFlaskPython/
+pip install -r requirements.txt
+
+
+14:12 ~ $ git clone https://github.com/khanfarhan10/ForestFirePredictionsFlaskPython.git
+Cloning into 'ForestFirePredictionsFlaskPython'...
+remote: Enumerating objects: 20, done.
+remote: Counting objects: 100% (20/20), done.
+remote: Compressing objects: 100% (18/18), done.
+remote: Total 20 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (20/20), done.
+Checking connectivity... done.
+16:27 ~ $ ls
+ForestFirePredictionsFlaskPython  README.txt
+16:27 ~ $ mkvirtualenv --python=/usr/bin/python3.7.6 my-virtualenv
+The path /usr/bin/python3.7.6 (from --python=/usr/bin/python3.7.6) does not exist
+16:28 ~ $ mkvirtualenv myvirtualenv --python=/usr/bin/python3.8
+Running virtualenv with interpreter /usr/bin/python3.8
+Already using interpreter /usr/bin/python3.8
+Using base prefix '/usr'
+New python executable in /home/kfpro/.virtualenvs/myvirtualenv/bin/python3.8
+Also creating executable in /home/kfpro/.virtualenvs/myvirtualenv/bin/python
+Installing setuptools, pip, wheel...
+done.
+virtualenvwrapper.user_scripts creating /home/kfpro/.virtualenvs/myvirtualenv/bin/predeactivate
+virtualenvwrapper.user_scripts creating /home/kfpro/.virtualenvs/myvirtualenv/bin/postdeactivate
+virtualenvwrapper.user_scripts creating /home/kfpro/.virtualenvs/myvirtualenv/bin/preactivate
+virtualenvwrapper.user_scripts creating /home/kfpro/.virtualenvs/myvirtualenv/bin/postactivate
+virtualenvwrapper.user_scripts creating /home/kfpro/.virtualenvs/myvirtualenv/bin/get_env_details
+(myvirtualenv) 16:32 ~ $ cd ForestFirePredictionsFlaskPython/
+(myvirtualenv) 16:33 ~/ForestFirePredictionsFlaskPython (main)$ pip install -r requirements.txt
+Looking in links: /usr/share/pip-wheels
+Processing /usr/share/pip-wheels/Flask-1.1.1-py2.py3-none-any.whl
+Collecting Werkzeug>=0.15
+  Downloading Werkzeug-1.0.1-py2.py3-none-any.whl (298 kB)
+     |████████████████████████████████| 298 kB 7.5 MB/s 
+Collecting click>=5.1
+  Downloading click-7.1.2-py2.py3-none-any.whl (82 kB)
+     |████████████████████████████████| 82 kB 295 kB/s 
+Processing /usr/share/pip-wheels/itsdangerous-1.1.0-py2.py3-none-any.whl
+Collecting Jinja2>=2.10.1
+  Downloading Jinja2-2.11.2-py2.py3-none-any.whl (125 kB)
+     |████████████████████████████████| 125 kB 5.1 MB/s 
+Collecting MarkupSafe>=0.23
+  Downloading MarkupSafe-1.1.1-cp38-cp38-manylinux1_x86_64.whl (32 kB)
+Installing collected packages: Werkzeug, click, itsdangerous, MarkupSafe, Jinja2, Flask
+Successfully installed Flask-1.1.1 Jinja2-2.11.2 MarkupSafe-1.1.1 Werkzeug-1.0.1 click-7.1.2 itsdangerous-1.1.0
+(myvirtualenv) 16:33 ~/ForestFirePredictionsFlaskPython (main)$ 

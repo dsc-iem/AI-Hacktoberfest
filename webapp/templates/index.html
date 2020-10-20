@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Forest Fire Predictions</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
+
+  <style>
+    .alert {
+      background: green;
+      padding: 1rem;
+      border-radius: 5px;
+      color: white;
+      margin: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Forest Fire Predictions App in Python Flask</h1>
+  </div>
+
+  <!-- Form -->
+  <div class="container">
+    <form action="/forestfirepredssend" method="POST">
+
+      <label for="x">x :
+        <input type="text" placeholder="x-spacial coordinate" name="x" style="width: 140px;" /></label>
+
+      <label for="y">y :
+        <input type="text" placeholder="y-spacial coordinate" name="y" style="width: 140px;" /></label>
+
+      <label for="month">month :
+        <input type="text" placeholder="enter the month" name="month" style="width: 120px;" /></label>
+
+      <label for="day">day :
+        <input type="text" placeholder="enter the day" name="day" style="width: 100px;" /></label>
+
+      <label for="FFMC">FFMC :
+        <input type="text" placeholder="FFMC index from the FWI system" name="FFMC" style="width: 230px;" /></label>
+
+      <label for="DMC">DMC :
+        <input type="text" placeholder="DMC index from the FWI system" name="DMC" style="width: 215px;" /></label>
+
+      <label for="DC">DC :
+        <input type="text" placeholder="DC index from the FWI system" name="DC" style="width: 205px;" /></label>
+
+      <label for="ISI">ISI :
+        <input type="text" placeholder="ISI index from the FWI system" name="ISI" style="width: 210px;" /></label>
+
+      <label for="temp">Temperature :
+        <input type="text" placeholder="Temperature in degree Celcius" name="temp" style="width: 210px;" /></label>
+
+      <label for="RH">Relative Humidity :
+        <input type="text" placeholder="Relative Humidity in %" name="RH" style="width: 160px;" /></label>
+
+      <label for="wind">Wind Speed :
+        <input type="text" placeholder="Wind Speed in km/h" name="wind" style="width: 150px;" /></label>
+
+      <label for="rain">Rainfall :
+        <input type="text" placeholder="Outside Rain in mm/m2" name="rain" style="width: 170px;" /></label>
+
+
+      <input type="submit" value="Get Predictions" id="calc_btn" />
+      <br />
+      <div class="alert">
+        {{ results }}
+      </div>
+    </form>
+  </div>
+
+  <div class="container">
+    <h4>This app was created by Farhan Khan &copy;</h4>
+    <p>
+      Feel free to visit my github repository at
+      <a href="https://github.com/khanfarhan10/ForestFirePredictionsFlaskPython">ForestFirePredictionsFlaskPython</a>
+      to get a better understanding and the working code documentation for
+      this app.
+    </p>
+  </div>
+</body>
+
+</html>
+
+<!--
+
+Features Provided
+For this dataset you are provided with the following features/attributes of a park:
+
+X - x-axis spatial coordinate within the park
+
+Y - y-axis spatial coordinate within the park
+
+month - month of the year: "jan" to "dec"
+
+day - day of the week: "mon" to "sun"
+
+FFMC - FFMC index from the FWI system: 18.7 to 96.20 : The Fine Fuel Moisture Code (FFMC) represents fuel moisture of forest litter fuels under the shade of a forest canopy. It is intended to represent moisture conditions for shaded litter fuels, the equivalent of 16-hour timelag. It ranges from 0-101. Subtracting the FFMC value from 100 can provide an estimate for the equivalent (approximately 10h) fuel moisture content, most accurate when FFMC values are roughly above 80.
+
+DMC - DMC index from the FWI system: 1.1 to 291.3 : The Duff Moisture Code (DMC) represents fuel moisture of decomposed organic material underneath the litter. System designers suggest that it is represents moisture conditions for the equivalent of 15-day (or 360 hr) timelag fuels. It is unitless and open ended. It may provide insight to live fuel moisture stress.
+
+DC - DC index from the FWI system: 7.9 to 860.6 : The Drought Code (DC), much like the Keetch-Byrum Drought Index, represents drying deep into the soil. It approximates moisture conditions for the equivalent of 53-day (1272 hour) timelag fuels. It is unitless, with a maximum value of 1000. Extreme drought conditions have produced DC values near 800.
+
+ISI - ISI index from the FWI system: 0.0 to 56.10 : The Initial Spread Index (ISI) is a numeric rating of the expected rate of fire spread. It is based on wind speed and FFMC. Like the rest of the FWI system components, ISI does not take fuel type into account. Actual spread rates vary between fuel types at the same ISI.
+
+temp - temperature in Celsius degrees: 2.2 to 33.30
+
+RH - relative humidity in %: 15.0 to 100
+
+wind - wind speed in km/h: 0.40 to 9.40
+
+rain - outside rain in mm/m2 : 0.0 to 6.4
+
+area - the burned area of the forest (in hectares): 0.00 to 1090.84 (this output variable is very skewed towards 0.0, thus it may make sense to model with the logarithm transform).
+
+
+-->
