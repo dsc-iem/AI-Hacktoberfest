@@ -51,11 +51,11 @@ def main_prediction():
     st.markdown("""<br>""",unsafe_allow_html=True)
     x = st.text_input("X","Enter an integer e.g. 5")
     y = st.text_input("Y","Enter an integer e.g. 5")
-    month = st.text_input("Month","Enter a numeric representation of the month e.g. if February enter 2")
-    ffmc = st.text_input("FFMC","Enter any number b/w 18.7 to 96.20")
-    dmc = st.text_input("DMC","Enter any number b/w 1.1 to 291.3")
-    dc = st.text_input("DC","Enter any number b/w 7.9 to 860.6")
-    temp = st.text_input("Temp","Enter any number b/w  2.2 to 33.30")
+    month = st.text_input("Month","e.g. for February enter 2")
+    ffmc = st.text_input("FFMC","e.g. 91.7")
+    dmc = st.text_input("DMC","e.g. 26.2")
+    dc = st.text_input("DC","e.g. 77.5")
+    temp = st.text_input("Temp","e.g. 14.6")
     # num = st.number_input("Enter a number",5)
     result=""
     if st.button("Predict"):
