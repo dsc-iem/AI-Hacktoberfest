@@ -49,13 +49,14 @@ def main_prediction():
     """
     st.markdown(html_temp,unsafe_allow_html=True)
     st.markdown("""<br>""",unsafe_allow_html=True)
-    x = st.text_input("X")
-    y = st.text_input("Y")
-    month = st.text_input("Month")
-    ffmc = st.text_input("FFMC")
-    dmc = st.text_input("DMC")
-    dc = st.text_input("DC")
-    temp = st.text_input("Temp")
+    x = st.text_input("X","Enter an integer e.g. 5")
+    y = st.text_input("Y","Enter an integer e.g. 5")
+    month = st.text_input("Month","Enter a numeric representation of the month e.g. if February enter 2")
+    ffmc = st.text_input("FFMC","Enter any number b/w 18.7 to 96.20")
+    dmc = st.text_input("DMC","Enter any number b/w 1.1 to 291.3")
+    dc = st.text_input("DC","Enter any number b/w 7.9 to 860.6")
+    temp = st.text_input("Temp","Enter any number b/w  2.2 to 33.30")
+    # num = st.number_input("Enter a number",5)
     result=""
     if st.button("Predict"):
         try:
@@ -64,10 +65,11 @@ def main_prediction():
             st.balloons()
             
         except:
-            st.error("Please fill up all the inputs🙏")
+            st.error("Please fill up all the inputs and make sure all are in numeric form")
     # st.balloons()
     if st.button("About"):
-        """The Project is Called `Forest Fire Prediction`, this is the [GitHub Repository README](https://github.com/dsc-iem/AI-Hacktoberfest/blob/master/README.md) ,from here you can learn more about the input parameters."""
+        """The Project is Called `Forest Fire Prediction`, this is the [GitHub Repository README](https://github.com/dsc-iem/AI-Hacktoberfest/blob/master/README.md) 
+        ,from here you can learn more about the input parameters."""
         
         
 # @st.cache
@@ -394,24 +396,45 @@ if red=="Collaborators of the Project":
     components.html(
     
     """
+    <html>
+        <head>
+            
+        </head>
+
+        <body>
+            <a>
+                <strong style="font-size:20px">
+                    <!-- 1khanfarhan10 &nbsp;&nbsp;-->
+                    <pre class="tab">1khanfarhan10 <a style="font-size:14px">26 commits </a><a style="color: #2bff00;font-size:10px">18,069++ </a><a style="color: #FF0000;font-size:10px">9,501--</a>   soumya997 <a style="font-size:14px">3 commits </a><a style="color: #2bff00;font-size:10px">19,938++ </a><a style="color: #FF0000;font-size:10px">3,460--</a></pre>
+                    <div class="github-card" data-github="khanfarhan10" data-width="350" data-height="150" data-theme="default"></div>
+                    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+                    <div class="github-card" data-github="soumya997" data-width="350" data-height="" data-theme="default"></div>
+                    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+                </strong> 
+                <br>
+                <strong style="font-size:20px">
+                    <!-- 1khanfarhan10 &nbsp;&nbsp;-->
+                    <pre class="tab">Nibba2018 <a style="font-size:14px">2 commits </a><a style="color: #2bff00;font-size:10px">25++ </a><a style="color: #FF0000;font-size:10px">27--</a>           Dsantra92 <a style="font-size:14px">1 commits  </a><a style="color: #2bff00;font-size:10px">1,129++ </a><a style="color: #FF0000;font-size:10px">0--</a></pre>
+                    <div class="github-card" data-github="Nibba2018" data-width="350" data-height="" data-theme="default"></div>
+                    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+                    <div class="github-card" data-github="Dsantra92" data-width="350" data-height="" data-theme="default"></div>
+                    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+                </strong>
+                <br> 
+                <strong style="font-size:20px">
+                    <!-- 1khanfarhan10 &nbsp;&nbsp;-->
+                    <pre class="tab">debangeedas <a style="font-size:14px">1 commits </a><a style="color: #2bff00;font-size:10px">40++ </a><a style="color: #FF0000;font-size:10px">0--</a>          BALaka-18 <a style="font-size:14px">1 commits </a><a style="color: #2bff00;font-size:10px">5++ </a><a style="color: #FF0000;font-size:10px">4--</a></pre>
+                    <div class="github-card" data-github="debangeedas" data-width="350" data-height="" data-theme="default"></div>
+                    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+                    <div class="github-card" data-github="BALaka-18" data-width="350" data-height="" data-theme="default"></div>
+            <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+                </strong> 
+                
+        </body>
+    </html>
+
+
     
-    <div class="github-card" data-github="Nibba2018" data-width="350" data-height="" data-theme="default"></div>
-    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-
-    <div class="github-card" data-github="khanfarhan10" data-width="350" data-height="150" data-theme="default"></div>
-    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-
-    <div class="github-card" data-github="BALaka-18" data-width="350" data-height="" data-theme="default"></div>
-    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-
-    <div class="github-card" data-github="Dsantra92" data-width="350" data-height="" data-theme="default"></div>
-    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-
-    <div class="github-card" data-github="debangeedas" data-width="350" data-height="" data-theme="default"></div>
-    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-
-    <div class="github-card" data-github="soumya997" data-width="350" data-height="" data-theme="default"></div>
-    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 
         """,
