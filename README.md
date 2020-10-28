@@ -44,5 +44,9 @@ For this dataset you are provided with the following features/attributes of a pa
 
 More Technical Data about the features could be found out at [Fire Weather Index System](https://www.nwcg.gov/publications/pms437/cffdrs/fire-weather-index-system) & [FWI Canada](https://cwfis.cfs.nrcan.gc.ca/background/summary/fwi).
 
+## Web-app for Forest Fire Prediction:
+We also have created a full-fledged user-friendly [`web-app`](https://ffp-web-app.herokuapp.com/) that contains a prediction page, an interactive EDA Dashboard page, About the Project page, and a contributors page. Please follow the instructions(provided on the particular page) in order to make a prediction😇.
+
+
 ## Credits
 The credits for this repository is hidden and will be provided post event completion/evaluation.
